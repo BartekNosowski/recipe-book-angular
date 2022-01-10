@@ -30,7 +30,6 @@ export class RecipeService {
   }
 
   getRecipes() {
-    // slice daje kopię recipes
     return this.recipes.slice();
   }
 

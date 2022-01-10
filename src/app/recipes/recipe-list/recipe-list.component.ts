@@ -9,8 +9,6 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  // recipe[] zaciąga z recipe.model i zapisuje do arrayki
-  // @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[];
 
   constructor(private recipeService: RecipeService,
