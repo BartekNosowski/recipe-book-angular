@@ -22,7 +22,7 @@
       </button>
       <ul class="dropdown-menu">
         <li><a style="cursor: pointer" (click)="onAddToShoppingList()">{{'recipeDetail.toShoppingList' | translate }}</a></li>
-        <li><a style="cursor: pointer">{{'recipeDetail.edit' | translate }}</a></li>
+        <li><a style="cursor: pointer" (click)="editRecipe()">{{'recipeDetail.edit' | translate }}</a></li>
         <li><a style="cursor: pointer">{{'recipeDetail.delete' | translate }}</a></li>
       </ul>
     </div>
