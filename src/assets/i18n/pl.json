@@ -1,0 +1,32 @@
+{
+  "header": {
+    "recipeBook": "Książka kucharska",
+    "recipe": "Przepis",
+    "shoppingList": "Lista zakupów",
+    "manage": "Zarządzaj",
+    "saveData": "Zapisz dane",
+    "fetchData": "Pobierz dane",
+    "language": "Język strony"
+  },
+  "recipeList": {
+    "newRecipe": "Nowy przepis",
+    "text": "Kawałek tłumaczenia"
+  },
+  "recipes": {
+    "select": "Wybierz przepis!"
+  },
+  "recipeDetail": {
+    "manageRecipe": "Zarządzaj przepisem",
+    "toShoppingList": "Dodaj do listy zakupów",
+    "edit": "Edytuj przepis",
+    "delete": "Usuń przepis"
+  },
+  "shoppingEdit": {
+    "name": "Nazwa",
+    "amount": "Ilość",
+    "add": "Dodaj",
+    "delete": "Usuń",
+    "clear": "Wyczyść"
+  }
+}
+

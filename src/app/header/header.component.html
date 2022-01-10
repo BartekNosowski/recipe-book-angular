@@ -1,0 +1,23 @@
+<div class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">{{'header.recipeBook' | translate}}</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/recipes">{{'header.recipe' | translate}}</a></li>
+        <li routerLinkActive="active"><a routerLink="/shopping-list">{{'header.shoppingList' | translate}}</a></li>
+      </ul>
+      <app-language-selector></app-language-selector>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a class="dropdown-toggle" role="button">{{'header.manage' | translate}} <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a style="cursor: pointer">{{'header.saveData' | translate}}</a></li>
+            <li><a style="cursor: pointer">{{'header.fetchData' | translate}}</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

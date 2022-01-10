@@ -1,0 +1,31 @@
+{
+  "header": {
+    "recipeBook": "Recipe book",
+    "recipe": "Recipe",
+    "shoppingList": "Shopping list",
+    "manage": "Manage",
+    "saveData": "Save Data",
+    "fetchData": "Fetch Data",
+    "language": "Language"
+  },
+  "recipeList": {
+    "newRecipe": "New recipe",
+    "text": "Kawałek tłumaczenia"
+  },
+  "recipes": {
+    "select": "Please select a recipe!"
+  },
+  "recipeDetail": {
+    "manageRecipe": "Manage recipe",
+    "toShoppingList": "To shopping list",
+    "edit": "Edit recipe",
+    "delete": "Delete recipe"
+  },
+  "shoppingEdit": {
+    "name": "Name",
+    "amount": "Amount",
+    "add": "Add",
+    "delete": "Delete",
+    "clear": "Clear"
+  }
+}

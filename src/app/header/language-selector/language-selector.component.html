@@ -1,0 +1,17 @@
+<ul class="nav navbar-nav navbar-right">
+  <li class="dropdown" appDropdown>
+    <a class="dropdown-toggle" role="button">
+      {{'header.language' | translate}} <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a style="cursor: pointer" (click)="switchLanguage('en')">EN</a></li>
+      <li><a style="cursor: pointer" (click)="switchLanguage('pl')">PL</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+<!--<a-->
+<!--  class="list-group-item"-->
+<!--  style="cursor: pointer;"-->
+<!--  *ngFor="let language of languages">{{language.name}}-->
+<!--</a>-->
