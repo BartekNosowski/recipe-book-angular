@@ -25,7 +25,16 @@
     "name": "Name",
     "amount": "Amount",
     "add": "Add",
+    "update": "Update",
     "delete": "Delete",
     "clear": "Clear"
+  },
+  "recipeEditUpdate": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "name": "Name",
+    "imageURL": "Image URL",
+    "description": "Description",
+    "addIngredient": "Add Ingredient"
   }
 }

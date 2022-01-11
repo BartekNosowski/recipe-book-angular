@@ -25,8 +25,17 @@
     "name": "Nazwa",
     "amount": "Ilość",
     "add": "Dodaj",
+    "update": "Aktualizuj",
     "delete": "Usuń",
     "clear": "Wyczyść"
+  },
+  "recipeEditUpdate": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "name": "Nazwa",
+    "imageURL": "URL obrazka",
+    "description": "Opis",
+    "addIngredient": "Dodaj składnik"
   }
 }
 
