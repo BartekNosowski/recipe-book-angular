@@ -15,7 +15,6 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {ShoppingListService} from './shopping-list/shopping-list.service';
-import {Injectable} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {RecipeStartComponent} from './recipes/recipe-start/recipe-start.component';
 import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
@@ -59,5 +58,4 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}
