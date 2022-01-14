@@ -11,7 +11,6 @@ export class LanguageSelectorComponent implements OnInit {
 
   constructor(translateService: TranslateService) {
     this.translateService = translateService;
-    this.translateService.setDefaultLang('en');
   }
 
   ngOnInit(): void {

@@ -13,8 +13,8 @@
         <li class="dropdown" appDropdown>
           <a class="dropdown-toggle" role="button">{{'header.manage' | translate}} <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a style="cursor: pointer">{{'header.saveData' | translate}}</a></li>
-            <li><a style="cursor: pointer">{{'header.fetchData' | translate}}</a></li>
+            <li><a style="cursor: pointer" (click)="onSaveData()">{{'header.saveData' | translate}}</a></li>
+            <li><a style="cursor: pointer" (click)="onFetchData()">{{'header.fetchData' | translate}}</a></li>
           </ul>
         </li>
       </ul>
