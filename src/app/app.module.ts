@@ -20,6 +20,7 @@ import {RecipeStartComponent} from './recipes/recipe-start/recipe-start.componen
 import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
 import {RecipeService} from './recipes/recipe.service';
 import {AuthComponent} from './auth/auth.component';
+import {LoadingSpinnerComponent} from './shared/loading-spinner/loading-spinner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LanguageSelectorComponent,
     RecipeStartComponent,
     RecipeEditComponent,
-    AuthComponent
+    AuthComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
