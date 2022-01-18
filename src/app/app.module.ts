@@ -1,20 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {LanguageSelectorComponent} from './header/language-selector/language-selector.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
-import {ShoppingListService} from './shopping-list/shopping-list.service';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
-import {RecipeService} from './recipes/recipe.service';
-import {AuthComponent} from './auth/auth.component';
-import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {RecipesModule} from './recipes/recipes.module';
 import {ShoppingListModule} from './shopping-list/shopping-list.module';
 import {SharedModule} from './shared/shared.module';
+import {CoreModule} from './core.module';
+import {AuthModule} from './auth/auth.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,11 +23,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     LanguageSelectorComponent,
-    AuthComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -43,14 +39,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     RecipesModule,
     ShoppingListModule,
-    SharedModule
+    SharedModule,
+    CoreModule,
+    AuthModule
   ],
   exports: [TranslateModule],
-  providers: [
-    ShoppingListService,
-    RecipeService,
-    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
