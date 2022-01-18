@@ -1,4 +1,5 @@
-# MyFirstApp
+# Recipe-book-angular
+live version on: https://ng-course-recipe-book-2022.web.app/auth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
