@@ -4,6 +4,7 @@
     "recipe": "Recipe",
     "shoppingList": "Shopping list",
     "loggingIn": "Authenticate",
+    "logout": "Logout",
     "manage": "Manage",
     "saveData": "Save Data",
     "fetchData": "Fetch Data",
@@ -37,5 +38,14 @@
     "imageURL": "Image URL",
     "description": "Description",
     "addIngredient": "Add Ingredient"
-  }
+  },
+"auth": {
+  "password": "Password",
+  "switchToLogin": "Switch to login",
+  "switchToSignUp": "Switch to sign up",
+  "login": "Login",
+  "signUp": "Sign up",
+  "loginPanel": "Login",
+  "signUpPanel": "Sign up"
+}
 }

@@ -8,44 +8,55 @@
     <div *ngIf="isLoading" class="text-center">
       <app-loading-spinner></app-loading-spinner>
     </div>
-    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
+    <div class="text-center">
+      <h1>{{(isLoginMode ? 'auth.loginPanel' : 'auth.signUpPanel') | translate}}</h1>
+    </div>
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading" class="needs-validation">
       <div class="form-group">
         <label for="email">E-mail</label>
         <input
           type="email"
           id="email"
-          class="form-control"
-          ngModel
           name="email"
+          class="form-control"
+          [ngClass]="email.invalid && email.touched ? 'border-input-invalid' : '' "
+          ngModel
+          #email="ngModel"
           required
           email
         />
+        <div class="invalid" *ngIf="email.invalid && email.dirty">Niepoprawny format email</div>
+        <div class="invalid" *ngIf="email.touched && email.invalid">Email jest wymagany</div>
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">{{'auth.password' | translate }}</label>
         <input
           type="password"
           id="password"
-          class="form-control"
-          ngModel
           name="password"
+          class="form-control"
+          [ngClass]="password.invalid && password.touched ? 'border-input-invalid' : '' "
+          ngModel
+          #password="ngModel"
           required
           minlength="6"
         />
+        <div class="invalid" *ngIf="password.invalid && password.dirty">Hasło musi zawierać conajmniej 6 znaków</div>
+        <div class="invalid" *ngIf="password.invalid && password.touched">Hasło jest wymagane</div>
       </div>
       <div class="pull-right">
         <button
           class="btn btn-primary"
           type="submit"
           [disabled]="!authForm.valid"
-        >{{isLoginMode ? 'Login' : 'Sign Up'}}
+        >{{(isLoginMode ? 'auth.login' : 'auth.signUp') | translate}}
         </button>
         |
         <button
           class="btn btn-primary"
           (click)="onSwitchMode()"
           type="button"
-        >{{isLoginMode ? 'Switch to sign up' : 'Switch to login'}}
+        >{{(isLoginMode ? 'auth.switchToSignUp' : 'auth.switchToLogin') | translate}}
         </button>
       </div>
 

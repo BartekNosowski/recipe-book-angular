@@ -4,6 +4,7 @@
     "recipe": "Przepis",
     "shoppingList": "Lista zakupów",
     "loggingIn": "Logowanie",
+    "logout": "Wyloguj",
     "manage": "Zarządzaj",
     "saveData": "Zapisz dane",
     "fetchData": "Pobierz dane",
@@ -37,6 +38,15 @@
     "imageURL": "URL obrazka",
     "description": "Opis",
     "addIngredient": "Dodaj składnik"
+  },
+  "auth": {
+    "password": "Hasło",
+    "switchToLogin": "Panel logowania",
+    "switchToSignUp": "Panel rejestracji",
+    "login": "Zaloguj",
+    "signUp": "Zarejestruj",
+    "loginPanel": "Logowanie",
+    "signUpPanel": "Rejestracja"
   }
 }
 
