@@ -46,6 +46,10 @@
   "login": "Login",
   "signUp": "Sign up",
   "loginPanel": "Login",
-  "signUpPanel": "Sign up"
+  "signUpPanel": "Sign up",
+  "incorrectEmailFormat": "Email format is incorrect",
+  "emailRequired": "Email is required",
+  "passwordRequired": "Password is required",
+  "incorrectPasswordFormat": "Password needs at least 6 characters"
 }
 }

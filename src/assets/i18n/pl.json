@@ -46,7 +46,11 @@
     "login": "Zaloguj",
     "signUp": "Zarejestruj",
     "loginPanel": "Logowanie",
-    "signUpPanel": "Rejestracja"
+    "signUpPanel": "Rejestracja",
+    "incorrectEmailFormat": "Niepoprawny format email",
+    "emailRequired": "Email jest wymagany",
+    "passwordRequired": "Hasło jest wymagane",
+    "incorrectPasswordFormat": "Hasło musi zawierać conajmniej 6 znaków"
   }
 }
 
